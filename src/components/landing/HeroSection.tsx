@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
-import { MessageCircle, ChevronDown } from "lucide-react";
+import { ChevronDown } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 import heroImage from "@/assets/hero-beauty.jpg";
+import logoImage from "@/assets/WhatsApp Image 2025-12-16 at 07.08.08.png";
 
 const WHATSAPP_LINK = "https://wa.me/5531993339605?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20atendimento.";
 
@@ -34,11 +36,14 @@ const HeroSection = () => {
           <span className="text-sm font-body text-muted-foreground">Estética & Beleza</span>
         </div>
 
-        {/* Brand Name */}
-        <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium text-foreground mb-6 animate-fade-up delay-100 leading-tight">
-          Thaynara Vertelo
-          <span className="block text-primary italic">Beauty</span>
-        </h1>
+        {/* Brand Logo */}
+        <div className="flex justify-center mb-6 animate-fade-up delay-100">
+          <img
+            src={logoImage}
+            alt="Thaynara Vertelo Beauty"
+            className="w-full max-w-md md:max-w-lg lg:max-w-xl h-auto object-contain"
+          />
+        </div>
 
         {/* Subtitle */}
         <p className="font-body text-lg sm:text-xl text-muted-foreground max-w-xl mx-auto mb-10 animate-fade-up delay-200 leading-relaxed">
@@ -53,11 +58,11 @@ const HeroSection = () => {
             asChild
           >
             <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
-              <MessageCircle className="w-5 h-5" />
+              <FaWhatsapp className="w-5 h-5" />
               Agendar pelo WhatsApp
             </a>
           </Button>
-          
+
           <Button
             variant="hero-outline"
             size="lg"

@@ -33,23 +33,26 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
           ? "bg-background/80 backdrop-blur-lg border-b border-border/30 shadow-soft"
           : "bg-transparent"
-      }`}
+        }`}
     >
       <div className="container-wide flex items-center justify-between h-16 md:h-20 px-5">
         {/* Logo */}
         <a
           href="#"
-          className="font-heading text-xl md:text-2xl font-medium text-foreground hover:text-primary transition-colors"
+          className="flex items-center hover:opacity-80 transition-opacity"
           onClick={(e) => {
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
         >
-          Thaynara <span className="text-primary italic">Beauty</span>
+          <img
+            src="/WhatsApp Image 2025-12-16 at 07.08.07.png"
+            alt="Thaynara Beauty Logo"
+            className="h-10 md:h-14 w-auto object-contain"
+          />
         </a>
 
         {/* Desktop Navigation */}
@@ -85,9 +88,8 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden absolute top-full left-0 right-0 bg-background/95 backdrop-blur-lg border-b border-border/30 transition-all duration-300 overflow-hidden ${
-          isMobileMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-        }`}
+        className={`md:hidden absolute top-full left-0 right-0 bg-background/95 backdrop-blur-lg border-b border-border/30 transition-all duration-300 overflow-hidden ${isMobileMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+          }`}
       >
         <div className="container px-5 py-6 space-y-4">
           {navLinks.map((link) => (

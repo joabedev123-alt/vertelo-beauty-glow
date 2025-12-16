@@ -43,20 +43,20 @@ const SocialProofSection = () => {
     <section id="depoimentos" className="section-padding">
       <div className="container-wide">
         {/* Trust Elements */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-20">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6 mb-12 md:mb-20">
           {trustElements.map((item, index) => (
             <div
               key={item.title}
-              className="group text-center p-6 rounded-2xl hover:bg-accent/30 transition-all duration-300 animate-fade-up"
+              className="group text-center p-4 md:p-6 rounded-2xl hover:bg-accent/30 transition-all duration-300 animate-fade-up"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="w-14 h-14 rounded-xl bg-accent/50 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/10 transition-colors">
-                <item.icon className="w-7 h-7 text-primary" />
+              <div className="w-10 h-10 md:w-14 md:h-14 rounded-xl bg-accent/50 flex items-center justify-center mx-auto mb-3 md:mb-4 group-hover:bg-primary/10 transition-colors">
+                <item.icon className="w-5 h-5 md:w-7 md:h-7 text-primary" />
               </div>
-              <h3 className="font-heading text-lg font-medium text-foreground mb-1">
+              <h3 className="font-heading text-base md:text-lg font-medium text-foreground mb-1">
                 {item.title}
               </h3>
-              <p className="font-body text-xs text-muted-foreground">
+              <p className="font-body text-[10px] md:text-xs text-muted-foreground leading-tight md:leading-normal">
                 {item.description}
               </p>
             </div>
@@ -64,14 +64,14 @@ const SocialProofSection = () => {
         </div>
 
         {/* Testimonials */}
-        <div className="text-center mb-12 animate-fade-up">
-          <span className="inline-block text-sm font-body text-primary tracking-widest uppercase mb-4">
+        <div className="text-center mb-8 md:mb-12 animate-fade-up">
+          <span className="inline-block text-sm font-body text-primary tracking-widest uppercase mb-3 md:mb-4">
             Depoimentos
           </span>
-          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-medium text-foreground mb-4">
+          <h2 className="font-heading text-2xl sm:text-4xl md:text-5xl font-medium text-foreground mb-4">
             O Que Dizem Nossas Clientes
           </h2>
-          <div className="w-20 h-0.5 bg-primary/30 mx-auto" />
+          <div className="w-16 md:w-20 h-0.5 bg-primary/30 mx-auto" />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

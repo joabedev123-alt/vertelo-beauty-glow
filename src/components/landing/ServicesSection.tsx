@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import serviceFacial from "@/assets/service-facial.jpg";
-import serviceSkincare from "@/assets/service-skincare.jpg";
-import serviceAesthetics from "@/assets/service-aesthetics.jpg";
-import serviceWellness from "@/assets/service-wellness.jpg";
+import serviceFacial from "@/assets/01.jpeg";
+import serviceSkincare from "@/assets/02.jpeg";
+import serviceAesthetics from "@/assets/04.jpeg";
+import serviceWellness from "@/assets/05.jpeg";
 
 const WHATSAPP_LINK = "https://wa.me/5531993339605?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os.";
 

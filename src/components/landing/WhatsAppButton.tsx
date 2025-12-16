@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { MessageCircle } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 const WHATSAPP_LINK = "https://wa.me/5531993339605?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20atendimento.";
 
@@ -26,19 +26,18 @@ const WhatsAppButton = () => {
 
   return (
     <div
-      className={`fixed bottom-6 right-6 z-50 transition-all duration-500 ${
-        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 pointer-events-none"
-      }`}
+      className={`fixed bottom-6 right-6 z-50 transition-all duration-500 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 pointer-events-none"
+        }`}
     >
       {/* Pulse Effect */}
       {isPulsing && (
         <span className="absolute inset-0 rounded-full bg-[hsl(145,63%,49%)] animate-ping opacity-40" />
       )}
-      
+
       <Button
         variant="whatsapp"
         size="icon"
-        className="w-14 h-14 rounded-full shadow-elevated relative"
+        className="w-16 h-16 rounded-full shadow-elevated relative"
         asChild
       >
         <a
@@ -46,8 +45,9 @@ const WhatsAppButton = () => {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Falar no WhatsApp"
+          className="flex items-center justify-center w-full h-full"
         >
-          <MessageCircle className="w-6 h-6" />
+          <FaWhatsapp className="w-10 h-10 text-white" />
         </a>
       </Button>
     </div>

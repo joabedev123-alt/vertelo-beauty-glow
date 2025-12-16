@@ -5,28 +5,28 @@ const AboutSection = () => {
     <section id="sobre" className="section-padding bg-gradient-section">
       <div className="container-narrow">
         {/* Section Header */}
-        <div className="text-center mb-12 animate-fade-up">
-          <span className="inline-block text-sm font-body text-primary tracking-widest uppercase mb-4">
+        <div className="text-center mb-8 md:mb-12 animate-fade-up">
+          <span className="inline-block text-sm font-body text-primary tracking-widest uppercase mb-3 md:mb-4">
             Sobre
           </span>
-          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-medium text-foreground mb-4">
+          <h2 className="font-heading text-2xl sm:text-4xl md:text-5xl font-medium text-foreground mb-4">
             Cuidado Personalizado
           </h2>
-          <div className="w-20 h-0.5 bg-primary/30 mx-auto" />
+          <div className="w-16 md:w-20 h-0.5 bg-primary/30 mx-auto" />
         </div>
 
         {/* Content */}
         <div className="max-w-2xl mx-auto text-center animate-fade-up delay-100">
           <p className="font-body text-lg text-muted-foreground leading-relaxed mb-8">
-            Sou <strong className="text-foreground">Thaynara Vertelo</strong>, especialista em estética 
-            e beleza, dedicada a oferecer tratamentos personalizados que unem 
-            <span className="text-primary font-medium"> técnicas modernas</span>, 
-            <span className="text-primary font-medium"> tecnologia de ponta</span> e um 
-            <span className="text-primary font-medium"> olhar atento</span> às necessidades 
+            Sou <strong className="text-foreground">Thaynara Vertelo</strong>, especialista em estética
+            e beleza, dedicada a oferecer tratamentos personalizados que unem
+            <span className="text-primary font-medium"> técnicas modernas</span>,
+            <span className="text-primary font-medium"> tecnologia de ponta</span> e um
+            <span className="text-primary font-medium"> olhar atento</span> às necessidades
             únicas de cada cliente.
           </p>
           <p className="font-body text-muted-foreground leading-relaxed mb-12">
-            Meu compromisso é proporcionar resultados reais, em um ambiente acolhedor e profissional, 
+            Meu compromisso é proporcionar resultados reais, em um ambiente acolhedor e profissional,
             onde você se sente cuidada e valorizada do início ao fim.
           </p>
         </div>

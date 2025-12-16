@@ -43,21 +43,21 @@ const ResultsSection = () => {
     <section id="resultados" className="section-padding bg-gradient-section">
       <div className="container-narrow">
         {/* Section Header */}
-        <div className="text-center mb-12 animate-fade-up">
-          <span className="inline-block text-sm font-body text-primary tracking-widest uppercase mb-4">
+        <div className="text-center mb-8 md:mb-12 animate-fade-up">
+          <span className="inline-block text-sm font-body text-primary tracking-widest uppercase mb-3 md:mb-4">
             Resultados
           </span>
-          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-medium text-foreground mb-4">
+          <h2 className="font-heading text-2xl sm:text-4xl md:text-5xl font-medium text-foreground mb-4">
             Transformações Reais
           </h2>
-          <p className="font-body text-muted-foreground max-w-lg mx-auto">
+          <p className="font-body text-muted-foreground max-w-lg mx-auto text-sm md:text-base">
             Resultados visíveis com cuidado, técnica e excelência
           </p>
-          <div className="w-20 h-0.5 bg-primary/30 mx-auto mt-6" />
+          <div className="w-16 md:w-20 h-0.5 bg-primary/30 mx-auto mt-4 md:mt-6" />
         </div>
 
         {/* Carousel */}
-        <div 
+        <div
           className="relative"
           onMouseEnter={() => setIsAutoPlaying(false)}
           onMouseLeave={() => setIsAutoPlaying(true)}
@@ -108,11 +108,10 @@ const ResultsSection = () => {
               <button
                 key={index}
                 onClick={() => setCurrentIndex(index)}
-                className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                  index === currentIndex 
-                    ? "bg-primary w-6" 
+                className={`w-2 h-2 rounded-full transition-all duration-300 ${index === currentIndex
+                    ? "bg-primary w-6"
                     : "bg-primary/30 hover:bg-primary/50"
-                }`}
+                  }`}
                 aria-label={`Ir para slide ${index + 1}`}
               />
             ))}

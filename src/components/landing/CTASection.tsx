@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { MessageCircle, Sparkles } from "lucide-react";
+import { Sparkles } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 const WHATSAPP_LINK = "https://wa.me/5531993339605?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20atendimento.";
 
@@ -23,7 +24,7 @@ const CTASection = () => {
             Agende seu momento
             <span className="block text-primary italic">de cuidado</span>
           </h2>
-          
+
           <p className="font-body text-lg text-muted-foreground max-w-md mx-auto mb-8 animate-fade-up delay-100">
             Transforme sua rotina de beleza com tratamentos personalizados e resultados reais.
           </p>
@@ -36,7 +37,7 @@ const CTASection = () => {
             asChild
           >
             <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
-              <MessageCircle className="w-6 h-6" />
+              <FaWhatsapp className="w-6 h-6" />
               Falar no WhatsApp
             </a>
           </Button>
