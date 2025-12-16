@@ -1,0 +1,83 @@
+import { Button } from "@/components/ui/button";
+import { MessageCircle, ChevronDown } from "lucide-react";
+import heroImage from "@/assets/hero-beauty.jpg";
+
+const WHATSAPP_LINK = "https://wa.me/5531993339605?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20atendimento.";
+
+const HeroSection = () => {
+  const scrollToServices = () => {
+    document.getElementById("servicos")?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  return (
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Background Image with Overlay */}
+      <div className="absolute inset-0">
+        <img
+          src={heroImage}
+          alt="Thaynara Vertelo Beauty - Tratamentos de beleza"
+          className="w-full h-full object-cover"
+          loading="eager"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/50 to-background/90" />
+      </div>
+
+      {/* Decorative Elements */}
+      <div className="absolute top-20 left-10 w-32 h-32 bg-sage-light/30 rounded-full blur-3xl animate-float" />
+      <div className="absolute bottom-40 right-10 w-48 h-48 bg-accent/20 rounded-full blur-3xl animate-float delay-300" />
+
+      {/* Content */}
+      <div className="relative z-10 container-narrow text-center px-5 py-20">
+        {/* Brand Badge */}
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-card/60 backdrop-blur-md border border-border/30 shadow-soft mb-8 animate-fade-up">
+          <span className="w-2 h-2 rounded-full bg-primary animate-pulse-soft" />
+          <span className="text-sm font-body text-muted-foreground">Estética & Beleza</span>
+        </div>
+
+        {/* Brand Name */}
+        <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium text-foreground mb-6 animate-fade-up delay-100 leading-tight">
+          Thaynara Vertelo
+          <span className="block text-primary italic">Beauty</span>
+        </h1>
+
+        {/* Subtitle */}
+        <p className="font-body text-lg sm:text-xl text-muted-foreground max-w-xl mx-auto mb-10 animate-fade-up delay-200 leading-relaxed">
+          Beleza, tecnologia e cuidado para realçar o melhor de você.
+        </p>
+
+        {/* CTA Buttons */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up delay-300">
+          <Button
+            variant="hero"
+            size="lg"
+            asChild
+          >
+            <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
+              <MessageCircle className="w-5 h-5" />
+              Agendar pelo WhatsApp
+            </a>
+          </Button>
+          
+          <Button
+            variant="hero-outline"
+            size="lg"
+            onClick={scrollToServices}
+          >
+            Ver serviços
+          </Button>
+        </div>
+      </div>
+
+      {/* Scroll Indicator */}
+      <button
+        onClick={scrollToServices}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-muted-foreground hover:text-primary transition-colors animate-float"
+        aria-label="Rolar para baixo"
+      >
+        <ChevronDown className="w-8 h-8" />
+      </button>
+    </section>
+  );
+};
+
+export default HeroSection;
