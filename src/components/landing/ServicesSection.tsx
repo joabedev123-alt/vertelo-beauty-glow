@@ -3,8 +3,8 @@ import { ArrowRight } from "lucide-react";
 import serviceMakeupSocial from "@/assets/Orçamento maquiagem _Page_3 2_page-0001.jpg";
 import serviceBride from "@/assets/Dia da noiva 2025_Page_1_page-0001.jpg";
 import servicePhotos from "@/assets/Orçamento maquiagem _Page_5_page-0001.jpg";
-import serviceDebutantes from "@/assets/DESTAQUE_MAKE_2804.jpg";
 import serviceHairstyle from "@/assets/hairstyle_service.jpg";
+import serviceDebutantes from "@/assets/debutante_service_updated.jpg";
 
 const WHATSAPP_LINK = "https://wa.me/5531993339605?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os.";
 

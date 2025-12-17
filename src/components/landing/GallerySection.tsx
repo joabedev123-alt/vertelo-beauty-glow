@@ -21,12 +21,22 @@ import social2 from "@/assets/WhatsApp Image 2025-12-16 at 07.15.04 (1).jpeg";
 import social3 from "@/assets/WhatsApp Image 2025-12-16 at 07.15.04 (2).jpeg";
 import artistic1 from "@/assets/WhatsApp Image 2025-12-16 at 07.15.04 (4).jpeg";
 import hairstyleCover from "@/assets/hairstyle_service.jpg";
+import hairstyleDetail1 from "@/assets/hairstyle_detail_1.jpg";
+import hairstyleDetail2 from "@/assets/hairstyle_detail_2.jpg";
+import hairstyleDetail3 from "@/assets/hairstyle_detail_3.jpg";
+import hairstyleDetail4 from "@/assets/hairstyle_detail_4.jpg";
+import hairstyleDetail5 from "@/assets/hairstyle_detail_5.jpg";
 
 const categories = ["Todos", "Noivas", "Social", "Artística", "Penteados"];
 
 const portfolioItems = [
     // Penteados Category (New)
     { id: 15, category: "Penteados", image: hairstyleCover, title: "Penteados Exclusivos", type: "image", imagePosition: "object-[center_20%]" },
+    { id: 16, category: "Penteados", image: hairstyleDetail1, title: "Penteado em Detalhes", type: "image" },
+    { id: 17, category: "Penteados", image: hairstyleDetail2, title: "Arte & Estilo", type: "image" },
+    { id: 18, category: "Penteados", image: hairstyleDetail3, title: "Detalhe Sofisticado", type: "image" },
+    { id: 19, category: "Penteados", image: hairstyleDetail4, title: "Acabamento Perfeito", type: "image" },
+    { id: 20, category: "Penteados", image: hairstyleDetail5, title: "Inspiração", type: "image" },
 
     { id: 3, category: "Noivas", image: bride3, title: "Detalhes Únicos", type: "image" }, // Moved to top to be the cover
     { id: 8, category: "Noivas", image: brideVideo, title: "Noiva em Movimento", type: "video" },
