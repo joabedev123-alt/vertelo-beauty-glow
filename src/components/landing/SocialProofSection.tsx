@@ -13,37 +13,37 @@ const trustElements = [
   },
   {
     icon: Lightbulb,
-    title: "Técnicas Modernas",
-    description: "Equipamentos e protocolos de última geração",
+    title: "Técnicas Atuais",
+    description: "Tendências e produtos de alta qualidade",
   },
   {
     icon: Star,
-    title: "Clientes Satisfeitas",
-    description: "Resultados reais que fazem a diferença",
+    title: "Excelência em Make",
+    description: "Produções que valorizam sua beleza",
   },
 ];
 
 const testimonials = [
   {
     name: "Maria Clara",
-    text: "Atendimento impecável! A Thaynara é muito atenciosa e profissional. Minha pele nunca esteve tão bonita.",
+    text: "Amei minha maquiagem de formatura! Durou a festa inteira e ficou exatamente como eu queria.",
   },
   {
     name: "Juliana Santos",
-    text: "Ambiente super aconchegante e tratamentos de qualidade. Recomendo de olhos fechados!",
+    text: "O curso de automaquiagem foi transformador. Aprendi técnicas que uso todo dia.",
   },
   {
     name: "Ana Paula",
-    text: "Resultados visíveis desde a primeira sessão. Profissional dedicada e técnicas atualizadas.",
+    text: "Profissional maravilhosa! Fez minha make de noiva e me senti uma verdadeira princesa.",
   },
 ];
 
 const SocialProofSection = () => {
   return (
-    <section id="depoimentos" className="section-padding">
+    <section className="py-12 bg-background border-b border-border/40">
       <div className="container-wide">
         {/* Trust Elements */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6 mb-12 md:mb-20">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6">
           {trustElements.map((item, index) => (
             <div
               key={item.title}
@@ -59,42 +59,6 @@ const SocialProofSection = () => {
               <p className="font-body text-[10px] md:text-xs text-muted-foreground leading-tight md:leading-normal">
                 {item.description}
               </p>
-            </div>
-          ))}
-        </div>
-
-        {/* Testimonials */}
-        <div className="text-center mb-8 md:mb-12 animate-fade-up">
-          <span className="inline-block text-sm font-body text-primary tracking-widest uppercase mb-3 md:mb-4">
-            Depoimentos
-          </span>
-          <h2 className="font-heading text-2xl sm:text-4xl md:text-5xl font-medium text-foreground mb-4">
-            O Que Dizem Nossas Clientes
-          </h2>
-          <div className="w-16 md:w-20 h-0.5 bg-primary/30 mx-auto" />
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {testimonials.map((testimonial, index) => (
-            <div
-              key={testimonial.name}
-              className="glass-card-elevated rounded-2xl p-6 relative animate-fade-up"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
-              <Quote className="w-8 h-8 text-primary/20 absolute top-4 right-4" />
-              <p className="font-body text-muted-foreground leading-relaxed mb-6 italic">
-                "{testimonial.text}"
-              </p>
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-accent flex items-center justify-center">
-                  <span className="font-heading text-lg text-primary">
-                    {testimonial.name.charAt(0)}
-                  </span>
-                </div>
-                <span className="font-body font-medium text-foreground">
-                  {testimonial.name}
-                </span>
-              </div>
             </div>
           ))}
         </div>

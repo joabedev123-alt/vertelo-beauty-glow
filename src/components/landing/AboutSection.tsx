@@ -1,71 +1,87 @@
 import { Sparkles, Heart, Award } from "lucide-react";
+import profileImage from "@/assets/WhatsApp Image 2025-12-16 at 12.21.08 (1).jpeg";
 
 const AboutSection = () => {
   return (
-    <section id="sobre" className="section-padding bg-gradient-section">
-      <div className="container-narrow">
+    <section id="sobre" className="section-padding bg-gradient-section overflow-hidden">
+      <div className="container-narrow relative">
         {/* Section Header */}
-        <div className="text-center mb-8 md:mb-12 animate-fade-up">
+        <div className="text-center mb-12 md:mb-16 animate-fade-up">
           <span className="inline-block text-sm font-body text-primary tracking-widest uppercase mb-3 md:mb-4">
-            Sobre
+            A Profissional
           </span>
-          <h2 className="font-heading text-2xl sm:text-4xl md:text-5xl font-medium text-foreground mb-4">
-            Cuidado Personalizado
+          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-medium text-foreground mb-4">
+            Thaynara Vertelo
           </h2>
           <div className="w-16 md:w-20 h-0.5 bg-primary/30 mx-auto" />
         </div>
 
-        {/* Content */}
-        <div className="max-w-2xl mx-auto text-center animate-fade-up delay-100">
-          <p className="font-body text-lg text-muted-foreground leading-relaxed mb-8">
-            Sou <strong className="text-foreground">Thaynara Vertelo</strong>, especialista em estética
-            e beleza, dedicada a oferecer tratamentos personalizados que unem
-            <span className="text-primary font-medium"> técnicas modernas</span>,
-            <span className="text-primary font-medium"> tecnologia de ponta</span> e um
-            <span className="text-primary font-medium"> olhar atento</span> às necessidades
-            únicas de cada cliente.
-          </p>
-          <p className="font-body text-muted-foreground leading-relaxed mb-12">
-            Meu compromisso é proporcionar resultados reais, em um ambiente acolhedor e profissional,
-            onde você se sente cuidada e valorizada do início ao fim.
-          </p>
-        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Image Column */}
+          <div className="relative animate-fade-up">
+            <div className="relative z-10 rounded-2xl overflow-hidden glass-card-elevated p-2">
+              <img
+                src={profileImage}
+                alt="Thaynara Vertelo"
+                className="w-full h-auto rounded-xl object-cover aspect-[3/4]"
+              />
+            </div>
+            {/* Decorative elements */}
+            <div className="absolute -top-6 -left-6 w-3/4 h-3/4 border-2 border-primary/20 rounded-2xl -z-10" />
+            <div className="absolute -bottom-6 -right-6 w-3/4 h-3/4 bg-accent/30 rounded-2xl -z-10 blur-xl" />
+          </div>
 
-        {/* Features */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
-          {[
-            {
-              icon: Sparkles,
-              title: "Técnicas Avançadas",
-              description: "Protocolos atualizados e equipamentos de última geração"
-            },
-            {
-              icon: Heart,
-              title: "Atendimento Humanizado",
-              description: "Cada cliente é única e merece um cuidado especial"
-            },
-            {
-              icon: Award,
-              title: "Resultados Reais",
-              description: "Transformações visíveis com segurança e excelência"
-            }
-          ].map((feature, index) => (
-            <div
-              key={feature.title}
-              className={`group glass-card rounded-2xl p-6 text-center hover:shadow-card transition-all duration-300 animate-fade-up`}
-              style={{ animationDelay: `${(index + 2) * 100}ms` }}
-            >
-              <div className="w-14 h-14 rounded-xl bg-accent/50 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/10 transition-colors">
-                <feature.icon className="w-7 h-7 text-primary" />
-              </div>
-              <h3 className="font-heading text-xl font-medium text-foreground mb-2">
-                {feature.title}
-              </h3>
-              <p className="font-body text-sm text-muted-foreground">
-                {feature.description}
+          {/* Content Column */}
+          <div className="animate-fade-up delay-200">
+            <h3 className="font-heading text-2xl text-primary mb-6">
+              Expert em realçar sua beleza única
+            </h3>
+
+            <div className="space-y-6 text-muted-foreground font-body leading-relaxed">
+              <p>
+                Sou <strong className="text-foreground">Thaynara Vertelo</strong>, maquiadora profissional e educadora na área da beleza. Minha trajetória é marcada pela paixão em transformar não apenas visualmente, mas também elevar a autoestima de cada cliente.
+              </p>
+              <p>
+                Com especialização em maquiagem social, noivas e produções artísticas, busco constantemente atualizações nas técnicas mais modernas do mercado para entregar resultados impecáveis e duradouros.
+              </p>
+              <p>
+                Além dos atendimentos, dedico-me a formar novas profissionais e ensinar mulheres a se automaquarem, compartilhando conhecimento técnico com didática e acolhimento.
               </p>
             </div>
-          ))}
+
+            {/* Qualifications / Highlights */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+              <div className="flex items-start gap-3">
+                <div className="w-10 h-10 rounded-full bg-accent/40 flex items-center justify-center shrink-0">
+                  <Sparkles className="w-5 h-5 text-primary" />
+                </div>
+                <div>
+                  <h4 className="font-body font-medium text-foreground">Especialista</h4>
+                  <p className="text-xs text-muted-foreground">Noivas e Social</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <div className="w-10 h-10 rounded-full bg-accent/40 flex items-center justify-center shrink-0">
+                  <Award className="w-5 h-5 text-primary" />
+                </div>
+                <div>
+                  <h4 className="font-body font-medium text-foreground">Certificada</h4>
+                  <p className="text-xs text-muted-foreground">Técnicas Avançadas</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <div className="w-10 h-10 rounded-full bg-accent/40 flex items-center justify-center shrink-0">
+                  <Heart className="w-5 h-5 text-primary" />
+                </div>
+                <div>
+                  <h4 className="font-body font-medium text-foreground">Educadora</h4>
+                  <p className="text-xs text-muted-foreground">Cursos Profissionais</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

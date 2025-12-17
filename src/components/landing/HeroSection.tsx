@@ -17,7 +17,7 @@ const HeroSection = () => {
       <div className="absolute inset-0">
         <img
           src={heroImage}
-          alt="Thaynara Vertelo Beauty - Tratamentos de beleza"
+          alt="Thaynara Vertelo Beauty - Makeup Artist"
           className="w-full h-full object-cover"
           loading="eager"
         />
@@ -33,11 +33,11 @@ const HeroSection = () => {
         {/* Brand Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-card/60 backdrop-blur-md border border-border/30 shadow-soft mb-8 animate-fade-up">
           <span className="w-2 h-2 rounded-full bg-primary animate-pulse-soft" />
-          <span className="text-sm font-body text-muted-foreground">Estética & Beleza</span>
+          <span className="text-sm font-body text-muted-foreground">Makeup & Beauty</span>
         </div>
 
         {/* Brand Logo */}
-        <div className="flex justify-center mb-6 animate-fade-up delay-100">
+        <div className="flex justify-center mb-6 mt-10 animate-fade-up delay-100">
           <img
             src={logoImage}
             alt="Thaynara Vertelo Beauty"
@@ -47,7 +47,7 @@ const HeroSection = () => {
 
         {/* Subtitle */}
         <p className="font-body text-lg sm:text-xl text-muted-foreground max-w-xl mx-auto mb-10 animate-fade-up delay-200 leading-relaxed">
-          Beleza, tecnologia e cuidado para realçar o melhor de você.
+          Realce sua beleza natural com serviços exclusivos de maquiagem e cursos profissionais.
         </p>
 
         {/* CTA Buttons */}

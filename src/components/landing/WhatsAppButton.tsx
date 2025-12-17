@@ -37,7 +37,7 @@ const WhatsAppButton = () => {
       <Button
         variant="whatsapp"
         size="icon"
-        className="w-16 h-16 rounded-full shadow-elevated relative"
+        className="w-[62px] h-[62px] rounded-full shadow-elevated relative"
         asChild
       >
         <a
@@ -47,7 +47,7 @@ const WhatsAppButton = () => {
           aria-label="Falar no WhatsApp"
           className="flex items-center justify-center w-full h-full"
         >
-          <FaWhatsapp className="w-10 h-10 text-white" />
+          <FaWhatsapp className="text-white" style={{ width: '38px', height: '38px' }} />
         </a>
       </Button>
     </div>

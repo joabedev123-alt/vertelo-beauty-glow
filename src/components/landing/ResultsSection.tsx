@@ -6,18 +6,18 @@ import { Button } from "@/components/ui/button";
 const transformations = [
   {
     id: 1,
-    title: "Rejuvenescimento Facial",
-    description: "Resultado após 4 sessões de tratamento",
+    title: "Dia da Noiva",
+    description: "Produção impecável e duradoura",
   },
   {
     id: 2,
-    title: "Limpeza de Pele",
-    description: "Pele renovada e luminosa",
+    title: "Maquiagem Social",
+    description: "Realce natural e sofisticado",
   },
   {
     id: 3,
-    title: "Tratamento Anti-idade",
-    description: "Redução visível de linhas finas",
+    title: "Produção Artística",
+    description: "Criatividade e técnica profissional",
   },
 ];
 
@@ -109,8 +109,8 @@ const ResultsSection = () => {
                 key={index}
                 onClick={() => setCurrentIndex(index)}
                 className={`w-2 h-2 rounded-full transition-all duration-300 ${index === currentIndex
-                    ? "bg-primary w-6"
-                    : "bg-primary/30 hover:bg-primary/50"
+                  ? "bg-primary w-6"
+                  : "bg-primary/30 hover:bg-primary/50"
                   }`}
                 aria-label={`Ir para slide ${index + 1}`}
               />

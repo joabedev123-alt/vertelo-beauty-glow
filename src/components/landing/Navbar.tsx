@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import logoNavbar from "@/assets/WhatsApp Image 2025-12-16 at 07.08.08.png";
 
 const navLinks = [
   { label: "Sobre", href: "#sobre" },
   { label: "Serviços", href: "#servicos" },
+  { label: "Academy", href: "#cursos" },
   { label: "Resultados", href: "#resultados" },
   { label: "Depoimentos", href: "#depoimentos" },
   { label: "Contato", href: "#contato" },
@@ -34,8 +36,8 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-          ? "bg-background/80 backdrop-blur-lg border-b border-border/30 shadow-soft"
-          : "bg-transparent"
+        ? "bg-background/80 backdrop-blur-lg border-b border-border/30 shadow-soft"
+        : "bg-transparent"
         }`}
     >
       <div className="container-wide flex items-center justify-between h-16 md:h-20 px-5">
@@ -49,9 +51,9 @@ const Navbar = () => {
           }}
         >
           <img
-            src="/WhatsApp Image 2025-12-16 at 07.08.07.png"
+            src={logoNavbar}
             alt="Thaynara Beauty Logo"
-            className="h-10 md:h-14 w-auto object-contain"
+            className="h-24 md:h-40 w-auto object-contain"
           />
         </a>
 
