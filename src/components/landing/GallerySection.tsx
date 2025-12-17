@@ -26,6 +26,8 @@ import hairstyleDetail2 from "@/assets/hairstyle_detail_2.jpg";
 import hairstyleDetail3 from "@/assets/hairstyle_detail_3.jpg";
 import hairstyleDetail4 from "@/assets/hairstyle_detail_4.jpg";
 import hairstyleDetail5 from "@/assets/hairstyle_detail_5.jpg";
+import hairstyleDetail6 from "@/assets/hairstyle_detail_6.jpg";
+import hairstyleDetail7 from "@/assets/hairstyle_detail_7.jpg";
 
 const categories = ["Todos", "Noivas", "Social", "Artística", "Penteados"];
 
@@ -37,6 +39,8 @@ const portfolioItems = [
     { id: 18, category: "Penteados", image: hairstyleDetail3, title: "Detalhe Sofisticado", type: "image" },
     { id: 19, category: "Penteados", image: hairstyleDetail4, title: "Acabamento Perfeito", type: "image" },
     { id: 20, category: "Penteados", image: hairstyleDetail5, title: "Inspiração", type: "image" },
+    { id: 21, category: "Penteados", image: hairstyleDetail6, title: "Finalização", type: "image" },
+    { id: 22, category: "Penteados", image: hairstyleDetail7, title: "Elegância", type: "image" },
 
     { id: 3, category: "Noivas", image: bride3, title: "Detalhes Únicos", type: "image" }, // Moved to top to be the cover
     { id: 8, category: "Noivas", image: brideVideo, title: "Noiva em Movimento", type: "video" },
