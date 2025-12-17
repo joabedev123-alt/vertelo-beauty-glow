@@ -32,7 +32,7 @@ const AboutSection = () => {
           </div>
 
           {/* Content Column */}
-          <div className="animate-fade-up delay-200">
+          <div className="animate-fade-up delay-200 text-center lg:text-left">
             <h3 className="font-heading text-2xl text-primary mb-6">
               Expert em realçar sua beleza única
             </h3>
@@ -51,7 +51,7 @@ const AboutSection = () => {
 
             {/* Qualifications / Highlights */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
-              <div className="flex items-start gap-3">
+              <div className="flex flex-col items-center text-center sm:flex-row sm:text-left sm:items-start gap-3">
                 <div className="w-10 h-10 rounded-full bg-accent/40 flex items-center justify-center shrink-0">
                   <Sparkles className="w-5 h-5 text-primary" />
                 </div>
@@ -61,7 +61,7 @@ const AboutSection = () => {
                 </div>
               </div>
 
-              <div className="flex items-start gap-3">
+              <div className="flex flex-col items-center text-center sm:flex-row sm:text-left sm:items-start gap-3">
                 <div className="w-10 h-10 rounded-full bg-accent/40 flex items-center justify-center shrink-0">
                   <Award className="w-5 h-5 text-primary" />
                 </div>
@@ -71,7 +71,7 @@ const AboutSection = () => {
                 </div>
               </div>
 
-              <div className="flex items-start gap-3">
+              <div className="flex flex-col items-center text-center sm:flex-row sm:text-left sm:items-start gap-3">
                 <div className="w-10 h-10 rounded-full bg-accent/40 flex items-center justify-center shrink-0">
                   <Heart className="w-5 h-5 text-primary" />
                 </div>

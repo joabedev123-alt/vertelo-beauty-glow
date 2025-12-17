@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
-import heroImage from "@/assets/hero-beauty.jpg";
+import heroVideo from "@/assets/hero_background.mp4";
 import logoImage from "@/assets/WhatsApp Image 2025-12-16 at 07.08.08.png";
 
 const WHATSAPP_LINK = "https://wa.me/5531993339605?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20atendimento.";
@@ -13,13 +13,15 @@ const HeroSection = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image with Overlay */}
+      {/* Background Video with Overlay */}
       <div className="absolute inset-0">
-        <img
-          src={heroImage}
-          alt="Thaynara Vertelo Beauty - Makeup Artist"
-          className="w-full h-full object-cover"
-          loading="eager"
+        <video
+          src={heroVideo}
+          className="absolute inset-0 w-full h-full object-cover"
+          autoPlay
+          loop
+          muted
+          playsInline
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/50 to-background/90" />
       </div>

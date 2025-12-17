@@ -23,6 +23,11 @@ const Footer = () => {
           <p className="font-body text-xs text-muted-foreground/70">
             © {currentYear} Thaynara Vertelo Beauty. Todos os direitos reservados.
           </p>
+
+          {/* Credits */}
+          <p className="font-body text-[10px] text-muted-foreground/50 hover:text-primary/70 transition-colors">
+            Desenvolvido com 💚 pela equipe Camaly
+          </p>
         </div>
       </div>
     </footer>
