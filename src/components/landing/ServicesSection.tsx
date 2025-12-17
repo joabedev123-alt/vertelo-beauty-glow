@@ -4,6 +4,7 @@ import serviceMakeupSocial from "@/assets/Orçamento maquiagem _Page_3 2_page-00
 import serviceBride from "@/assets/Dia da noiva 2025_Page_1_page-0001.jpg";
 import servicePhotos from "@/assets/Orçamento maquiagem _Page_5_page-0001.jpg";
 import serviceDebutantes from "@/assets/DESTAQUE_MAKE_2804.jpg";
+import serviceHairstyle from "@/assets/hairstyle_service.jpg";
 
 const WHATSAPP_LINK = "https://wa.me/5531993339605?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os.";
 
@@ -37,6 +38,13 @@ const services: Service[] = [
     description: "Produção completa para celebrar seus 15 anos com estilo e sofisticação.",
     image: serviceDebutantes,
     features: ["Produção completa", "Acompanhamento em fotos", "Penteado exclusivo"]
+  },
+  {
+    title: "Penteados",
+    description: "Penteados exclusivos para noivas, debutantes e festas, com técnicas de alta durabilidade e visagismo.",
+    image: serviceHairstyle,
+    features: ["Clássicos e Modernos", "Visagismo Capilar", "Alta Durabilidade"],
+    imagePosition: "object-[center_10%]"
   },
   {
     title: "Produção para Fotos",

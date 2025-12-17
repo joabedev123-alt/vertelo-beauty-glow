@@ -19,14 +19,7 @@ const contactInfo = [
   {
     icon: MapPin,
     label: "Endereço",
-    value: "Rua Lídio Lunardi, 200 – Maria Virgínia",
     link: "https://maps.google.com/?q=Rua+Lídio+Lunardi,+200+Maria+Virgínia",
-  },
-  {
-    icon: Clock,
-    label: "Horário",
-    value: "Seg-Sáb: 9h às 19h",
-    link: null,
   },
 ];
 

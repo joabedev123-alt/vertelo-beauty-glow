@@ -20,10 +20,14 @@ import social1 from "@/assets/WhatsApp Image 2025-12-16 at 07.13.50.jpeg";
 import social2 from "@/assets/WhatsApp Image 2025-12-16 at 07.15.04 (1).jpeg";
 import social3 from "@/assets/WhatsApp Image 2025-12-16 at 07.15.04 (2).jpeg";
 import artistic1 from "@/assets/WhatsApp Image 2025-12-16 at 07.15.04 (4).jpeg";
+import hairstyleCover from "@/assets/hairstyle_service.jpg";
 
-const categories = ["Todos", "Noivas", "Social", "Artística"];
+const categories = ["Todos", "Noivas", "Social", "Artística", "Penteados"];
 
 const portfolioItems = [
+    // Penteados Category (New)
+    { id: 15, category: "Penteados", image: hairstyleCover, title: "Penteados Exclusivos", type: "image", imagePosition: "object-[center_20%]" },
+
     { id: 3, category: "Noivas", image: bride3, title: "Detalhes Únicos", type: "image" }, // Moved to top to be the cover
     { id: 8, category: "Noivas", image: brideVideo, title: "Noiva em Movimento", type: "video" },
     { id: 1, category: "Noivas", image: bride1, title: "Noiva Radiante", type: "image" },
@@ -147,7 +151,7 @@ const GallerySection = () => {
                                 <img
                                     src={item.image}
                                     alt={item.title}
-                                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                    className={`w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 ${item.imagePosition || 'object-center'}`}
                                     loading="lazy"
                                 />
                             )}
