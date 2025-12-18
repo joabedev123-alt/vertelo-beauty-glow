@@ -49,7 +49,7 @@ const HeroSection = () => {
 
         {/* Subtitle */}
         <p className="font-body text-lg sm:text-xl text-muted-foreground max-w-xl mx-auto mb-10 animate-fade-up delay-200 leading-relaxed">
-          Realce sua beleza natural com serviços exclusivos de maquiagem e cursos profissionais.
+          Realce sua beleza natural com serviços exclusivos de maquiagem, penteados e cursos profissionais.
         </p>
 
         {/* CTA Buttons */}
