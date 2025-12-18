@@ -64,7 +64,7 @@ const CoursesSection = () => {
 
                                 <div className="grid grid-cols-2 gap-4 pt-4">
                                     <div className="bg-background p-4 rounded-xl shadow-sm border border-border/50 text-center flex flex-col justify-center items-center h-full">
-                                        <h4 className="font-heading text-2xl font-bold text-primary mb-1">6+</h4>
+                                        <h4 className="font-heading text-2xl font-bold text-primary mb-1">8+</h4>
                                         <p className="text-xs text-muted-foreground uppercase font-medium leading-tight">Anos de XP</p>
                                     </div>
                                     <div className="bg-background p-4 rounded-xl shadow-sm border border-border/50 text-center flex flex-col justify-center items-center h-full">

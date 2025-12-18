@@ -45,7 +45,7 @@ const AboutSection = () => {
                 Com especialização em maquiagem social, noivas e produções artísticas, busco constantemente atualizações nas técnicas mais modernas do mercado para entregar resultados impecáveis e duradouros.
               </p>
               <p>
-                Além dos atendimentos, dedico-me a formar novas profissionais e ensinar mulheres a se automaquarem, compartilhando conhecimento técnico com didática e acolhimento.
+                Além dos atendimentos, dedico-me a formar novas profissionais e ensinar mulheres a se automaquiarem, compartilhando conhecimento técnico com didática e acolhimento.
               </p>
             </div>
 

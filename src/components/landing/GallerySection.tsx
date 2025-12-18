@@ -14,33 +14,64 @@ import bride5 from "@/assets/noivas/WhatsApp Image 2025-12-17 at 05.47.53.jpeg";
 import bride6 from "@/assets/noivas/WhatsApp Image 2025-12-17 at 05.47.54 (1).jpeg";
 import bride7 from "@/assets/noivas/WhatsApp Image 2025-12-17 at 05.47.55.jpeg";
 import brideVideo from "@/assets/noivas/bride_transformation_video.mp4";
+import brideNew1 from "@/assets/noivas/bride_new_1.jpg";
+import brideNew2 from "@/assets/noivas/bride_new_2.jpg";
+import brideNew3 from "@/assets/noivas/bride_new_3.jpg";
+import brideNew4 from "@/assets/noivas/bride_new_4.jpg";
+import brideNew5 from "@/assets/noivas/bride_new_5.jpg";
+import brideNew6 from "@/assets/noivas/bride_new_6.jpg";
 
 // Import Social Gallery
 import social1 from "@/assets/WhatsApp Image 2025-12-16 at 07.13.50.jpeg";
 import social2 from "@/assets/WhatsApp Image 2025-12-16 at 07.15.04 (1).jpeg";
 import social3 from "@/assets/WhatsApp Image 2025-12-16 at 07.15.04 (2).jpeg";
+import socialDetail1 from "@/assets/social/social_detail_1.jpg";
+import socialDetail2 from "@/assets/social/social_detail_2.jpg";
+import socialDetail3 from "@/assets/social/social_detail_3.jpg";
+import socialDetail4 from "@/assets/social/social_detail_4.jpg";
+import socialDetail5 from "@/assets/social/social_detail_5.jpg";
 import artistic1 from "@/assets/WhatsApp Image 2025-12-16 at 07.15.04 (4).jpeg";
 import hairstyleCover from "@/assets/hairstyle_service.jpg";
 import hairstyleDetail1 from "@/assets/hairstyle_detail_1.jpg";
-import hairstyleDetail2 from "@/assets/hairstyle_detail_2.jpg";
-import hairstyleDetail3 from "@/assets/hairstyle_detail_3.jpg";
-import hairstyleDetail4 from "@/assets/hairstyle_detail_4.jpg";
-import hairstyleDetail5 from "@/assets/hairstyle_detail_5.jpg";
-import hairstyleDetail6 from "@/assets/hairstyle_detail_6.jpg";
-import hairstyleDetail7 from "@/assets/hairstyle_detail_7.jpg";
+import hairstyleNew1 from "@/assets/penteados/hairstyle_new_1.jpg";
+import hairstyleNew2 from "@/assets/penteados/hairstyle_new_2.jpg";
 
-const categories = ["Todos", "Noivas", "Social", "Artística", "Penteados"];
+
+import debutanteCover from "@/assets/debutantes/WhatsApp Image 2025-12-18 at 06.48.33.jpeg";
+import debutante1 from "@/assets/debutantes/WhatsApp Image 2025-12-18 at 06.48.32.jpeg";
+import debutante2 from "@/assets/debutantes/WhatsApp Image 2025-12-18 at 06.48.32 (1).jpeg";
+import debutante3 from "@/assets/debutantes/WhatsApp Image 2025-12-18 at 06.48.33 (1).jpeg";
+import debutante4 from "@/assets/debutantes/WhatsApp Image 2025-12-18 at 06.09.20.jpeg";
+import debutante5 from "@/assets/debutantes/WhatsApp Image 2025-12-18 at 06.0.20.jpeg";
+import debutanteVideo1 from "@/assets/debutantes/debutante_video_1.mp4";
+import artisticCover from "@/assets/artistico/artistic_cover.jpeg";
+import artisticDetail1 from "@/assets/artistico/artistic_detail_1.jpg";
+import artisticDetail2 from "@/assets/artistico/artistic_detail_2.jpg";
+import artisticDetail3 from "@/assets/artistico/artistic_detail_3.jpg";
+import artisticDetail4 from "@/assets/artistico/artistic_detail_4.jpg";
+import artisticDetail5 from "@/assets/artistico/artistic_detail_5.jpg";
+import artisticDetail6 from "@/assets/artistico/artistic_detail_6.jpg";
+import artisticDetail7 from "@/assets/artistico/artistic_detail_7.jpg";
+import artisticDetail8 from "@/assets/artistico/artistic_detail_8.jpg";
+
+const categories = ["Todos", "Noivas", "Social", "Artística", "Penteados", "Debutantes"];
 
 const portfolioItems = [
+    // Debutantes Category (New)
+    { id: 23, category: "Debutantes", image: debutanteCover, title: "15 Anos Inesquecíveis", type: "image", imagePosition: "object-top" },
+    { id: 29, category: "Debutantes", image: debutanteVideo1, title: "Dia de Princesa", type: "video" },
+    { id: 24, category: "Debutantes", image: debutante1, title: "Produção Debutante", type: "image" },
+    { id: 25, category: "Debutantes", image: debutante2, title: "Sonho de Princesa", type: "image" },
+    { id: 26, category: "Debutantes", image: debutante3, title: "Momento Mágico", type: "image" },
+    { id: 27, category: "Debutantes", image: debutante4, title: "Brilho Único", type: "image" },
+    { id: 28, category: "Debutantes", image: debutante5, title: "Encanto", type: "image" },
+
     // Penteados Category (New)
     { id: 15, category: "Penteados", image: hairstyleCover, title: "Penteados Exclusivos", type: "image", imagePosition: "object-[center_20%]" },
     { id: 16, category: "Penteados", image: hairstyleDetail1, title: "Penteado em Detalhes", type: "image" },
-    { id: 17, category: "Penteados", image: hairstyleDetail2, title: "Arte & Estilo", type: "image" },
-    { id: 18, category: "Penteados", image: hairstyleDetail3, title: "Detalhe Sofisticado", type: "image" },
-    { id: 19, category: "Penteados", image: hairstyleDetail4, title: "Acabamento Perfeito", type: "image" },
-    { id: 20, category: "Penteados", image: hairstyleDetail5, title: "Inspiração", type: "image" },
-    { id: 21, category: "Penteados", image: hairstyleDetail6, title: "Finalização", type: "image" },
-    { id: 22, category: "Penteados", image: hairstyleDetail7, title: "Elegância", type: "image" },
+    { id: 45, category: "Penteados", image: hairstyleNew1, title: "Clássico Moderno", type: "image" },
+    { id: 46, category: "Penteados", image: hairstyleNew2, title: "Arte em Fios", type: "image" },
+
 
     { id: 3, category: "Noivas", image: bride3, title: "Detalhes Únicos", type: "image" }, // Moved to top to be the cover
     { id: 8, category: "Noivas", image: brideVideo, title: "Noiva em Movimento", type: "video" },
@@ -50,14 +81,34 @@ const portfolioItems = [
     { id: 5, category: "Noivas", image: bride5, title: "Making Of", type: "image" },
     { id: 6, category: "Noivas", image: bride6, title: "Momentos Especiais", type: "image" },
     { id: 7, category: "Noivas", image: bride7, title: "Noiva Romântica", type: "image" },
+    { id: 50, category: "Noivas", image: brideNew1, title: "Produção Especial", type: "image" },
+    { id: 51, category: "Noivas", image: brideNew2, title: "Detalhes", type: "image" },
+    { id: 52, category: "Noivas", image: brideNew3, title: "Beleza Radiante", type: "image" },
+    { id: 53, category: "Noivas", image: brideNew4, title: "Toque Final", type: "image" },
+    { id: 54, category: "Noivas", image: brideNew5, title: "Inspiração Noiva", type: "image" },
+    { id: 55, category: "Noivas", image: brideNew6, title: "Charme", type: "image" },
 
     // Social Category
     { id: 11, category: "Social", image: social1, title: "Make Glam", type: "image" },
     { id: 12, category: "Social", image: social2, title: "Produção Festa", type: "image" },
     { id: 13, category: "Social", image: social3, title: "Social Beauty", type: "image" },
+    { id: 40, category: "Social", image: socialDetail1, title: "Evento Social", type: "image" },
+    { id: 41, category: "Social", image: socialDetail2, title: "Festa", type: "image" },
+    { id: 42, category: "Social", image: socialDetail3, title: "Produção", type: "image" },
+    { id: 43, category: "Social", image: socialDetail4, title: "Glamour", type: "image" },
+    { id: 44, category: "Social", image: socialDetail5, title: "Noite", type: "image" },
+    { id: 14, category: "Social", image: artistic1, title: "Expressão & Arte", type: "image" },
 
     // Artística Category
-    { id: 14, category: "Artística", image: artistic1, title: "Expressão & Arte", type: "image" },
+    { id: 30, category: "Artística", image: artisticCover, title: "Arte & Criatividade", type: "image" },
+    { id: 31, category: "Artística", image: artisticDetail1, title: "Cores e Formas", type: "image" },
+    { id: 32, category: "Artística", image: artisticDetail2, title: "Inspiração Artística", type: "image" },
+    { id: 33, category: "Artística", image: artisticDetail3, title: "Arte Viva", type: "image" },
+    { id: 34, category: "Artística", image: artisticDetail4, title: "Traços & Tons", type: "image" },
+    { id: 35, category: "Artística", image: artisticDetail5, title: "Expressão Pura", type: "image" },
+    { id: 36, category: "Artística", image: artisticDetail6, title: "Beleza Artística", type: "image" },
+    { id: 37, category: "Artística", image: artisticDetail7, title: "Criatividade", type: "image" },
+    { id: 38, category: "Artística", image: artisticDetail8, title: "Conceito Único", type: "image" },
 ];
 
 const GallerySection = () => {

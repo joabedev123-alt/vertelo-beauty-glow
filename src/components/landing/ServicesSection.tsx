@@ -1,10 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import serviceMakeupSocial from "@/assets/Orçamento maquiagem _Page_3 2_page-0001.jpg";
-import serviceBride from "@/assets/Dia da noiva 2025_Page_1_page-0001.jpg";
-import servicePhotos from "@/assets/Orçamento maquiagem _Page_5_page-0001.jpg";
+import serviceMakeupSocial from "@/assets/makeup_service_updated.jpg";
+import serviceBride from "@/assets/bride_service_updated.jpg";
+import servicePhotos from "@/assets/photoshoot_service_updated.jpg";
 import serviceHairstyle from "@/assets/hairstyle_service.jpg";
 import serviceDebutantes from "@/assets/debutante_service_updated.jpg";
+import serviceBrideCivil from "@/assets/bride_civil_service.jpg";
 
 const WHATSAPP_LINK = "https://wa.me/5531993339605?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os.";
 
@@ -30,8 +31,15 @@ const services: Service[] = [
     title: "Dia da Noiva",
     description: "Uma experiência exclusiva de cuidado e beleza para o dia mais importante da sua vida.",
     image: serviceBride,
-    features: ["Atendimento exclusivo", "Cronograma capilar", "Teste de maquiagem"],
+    features: ["Atendimento exclusivo", "Assessoria completa", "Teste de maquiagem", "Teste de penteado"],
     imagePosition: "object-[center_45%]" // Adjusted to move image down slightly
+  },
+  {
+    title: "Noiva Civil",
+    description: "Produção leve e sofisticada, ideal para casamentos no civil e mini weddings.",
+    image: serviceBrideCivil,
+    features: ["Maquiagem Atemporal", "Penteado Natural", "Alta Durabilidade"],
+    imagePosition: "object-[center_10%]"
   },
   {
     title: "Debutantes",
